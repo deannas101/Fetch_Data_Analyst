@@ -18,13 +18,75 @@ my_data %>%
     
 ^using dplyr
 
-|Users|
+|**Users**|New Column Name|
 |-----|
-|_id|
-|active|
-|createdDate|
-|lastLogin|
-|role|
-|signUpSource|
-|state|
+|_id|userId|
+|active|isActive|
+|createdDate||
+|lastLogin||
+|role||
+|signUpSource||
+|state||
 
+|**Brands**|New Column Name|
+|---|---|
+|_id|brandId|
+|barcode||
+|category||
+|categoryCode||
+|cpg.$id|cpgId|
+|cpg.$ref|cpgRef|
+|name||
+|topBrand||
+|brandCode||
+
+|**Receipts**|New Column Name|
+|---|---|
+|_id|receiptId|
+|bonusPointsEarned||
+|bonusPointsEarnedReason||
+|createDate||
+|dateScanned||
+|finishedDate||
+|modifyDate||
+|pointsAwardedDate||
+|pointsEarned...9|overallPointsEarned|
+|purchaseDate||
+|purchasedItemCount||
+|barcode|| <- does this barcode match the brand barcode?
+|description||
+|finalPrice|totalFinalPrice|
+|itemPrice||
+|needsFetchReview||
+|partnerItemId||
+|preventTargetGapPoints||
+|quantityPurchased||
+|userFlaggedBarcode||
+|userFlaggedNewItem||
+|userFlaggedPrice||
+|userFlaggedQuantity||
+|needsFetchReviewReason||
+|pointsNotAwardedReason||
+|pointsPayerId|| <- is this the brand id?
+|rewardsGroup||
+|rewardsProductPartnerId|| <- is this the brand id?
+|userFlaggedDescription||
+|originalMetaBriteBarcode||
+|originalMetaBriteDescription||
+|brandCode|| <- is this the foreign key to brand?
+|competitorRewardsGroup||
+|discountedItemPrice||
+|originalReceiptItemText||
+|itemNumber||
+|originalMetaBriteQuantityPurchased||
+|pointsEarned...38|itemPointsEarned|
+|targetPrice||
+|competitiveProduct||
+|originalFinalPrice||
+|originalMetaBriteItemPrice||
+|deleted||
+|priceAfterCoupon||
+|metabriteCampaignId||
+|rewardsReceiptStatus||
+|totalSpent||
+|userId|| <- foreign key to users
