@@ -10,6 +10,8 @@ https://gitmind.com/er-diagram-tool.html
 
 before making the ER diagram, I need to rename some of the column names to be more specific/human readable. Especially since receipts has 2 columns of the same name.
 
+*the users csv is messed up, gotta go fix it*
+
 my_data %>% 
   rename(
     sepal_length = Sepal.Length,
@@ -92,11 +94,7 @@ my_data %>%
 |userId|| <- foreign key to users
 
 
-|Potential receipt joins to brands|
+|List of joins|
 |---|
-|receipt.barcode = brands.barcode|
-|receipt.pointPayerId = brands.brandId|
-|receipt.rewardsProductPartnerId = brand.brandId|
-|receipt.brandCode = brands.brandCode|
-
-Test receipt.userId = users.userId
+|receipt.rewardsProductPartnerId = brand.cpgId|
+|receipt.userId = users.userId|
