@@ -19,7 +19,7 @@ my_data %>%
 ^using dplyr
 
 |**Users**|New Column Name|
-|-----|
+|---|---|
 |_id|userId|
 |active|isActive|
 |createdDate||
@@ -90,3 +90,13 @@ my_data %>%
 |rewardsReceiptStatus||
 |totalSpent||
 |userId|| <- foreign key to users
+
+
+|Potential receipt joins to brands|
+|---|
+|receipt.barcode = brands.barcode|
+|receipt.pointPayerId = brands.brandId|
+|receipt.rewardsProductPartnerId = brand.brandId|
+|receipt.brandCode = brands.brandCode|
+
+Test receipt.userId = users.userId
