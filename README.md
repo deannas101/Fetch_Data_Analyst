@@ -1,2 +1,3 @@
-# Fetch_Data_Analyst
-Fetch Rewards Coding Exercise - Data Analyst
+# Fetch Data Analyst Exercise
+
+I'll put some more description stuff here! It'll be super pretty once everything else is all wrapped up :)
