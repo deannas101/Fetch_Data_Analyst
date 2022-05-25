@@ -98,3 +98,10 @@ my_data %>%
 |---|
 |receipt.rewardsProductPartnerId = brand.cpgId|
 |receipt.userId = users.userId|
+
+
+## Data quality check
+
+https://statisticsofdoom.com/page/graduate-statistics/
+
+style guide: https://style.tidyverse.org/
